@@ -120,7 +120,7 @@ $($Logo)
 <div>
   <form action="create" method=POST>
     <label for="password">Password</label><br>
-    <input type="text" id="password" name="password" value="$($Password)" autocomplete="off"><br>
+    <input type="text" id="password" name="password" value="$($Password)" autocomplete="Enter Password To Send"><br>
     <label for="maxviews">Maximum Number of Views: </label>
     <input type="text" id="maxviews" name="maxviews" value="1"><br>
     <label for="URL">Unique Password URL</label><br>
@@ -136,10 +136,6 @@ $($Logo)
 </body>
 </html>
 "@
-
-<script type="text/javascript">
-    document.getElementById('password').value ='';
-</script>
 
 # Associate values to output bindings by calling 'Push-OutputBinding'.
 Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
