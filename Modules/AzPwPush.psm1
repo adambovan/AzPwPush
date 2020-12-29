@@ -29,7 +29,7 @@ function Delete-AzPassword {
     param($ID)
     try {
         Remove-Item -Force -path "PasswordFile_$($ID)" -ErrorAction Stop| Out-Null
-        return $true
+   #     return $true
     }
     catch {
         return $false
