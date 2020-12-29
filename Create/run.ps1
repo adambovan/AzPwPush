@@ -137,6 +137,10 @@ $($Logo)
 </html>
 "@
 
+<script type="text/javascript">
+    document.getElementById('password').value ='';
+</script>
+
 # Associate values to output bindings by calling 'Push-OutputBinding'.
 Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
     StatusCode  = [HttpStatusCode]::OK
