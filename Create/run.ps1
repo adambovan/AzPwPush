@@ -120,9 +120,9 @@ $($Logo)
 <div>
   <form action="create" method=POST>
     <label for="password">Password</label><br>
-    <input type="text" id="password" name="password" value="$($Password)"><br>
+    <input type="text" id="password" name="password" value="$($Password)" autocomplete="off"><br>
     <label for="maxviews">Maximum Number of Views: </label>
-    <input type="text" id="maxviews" name="maxviews" value="2"><br>
+    <input type="text" id="maxviews" name="maxviews" value="1"><br>
     <label for="URL">Unique Password URL</label><br>
     <input type="text" id="URL" disabled value="$($URL)"><br><br>
     Use the Create button below to generate a new URL with the current password field.<br>
